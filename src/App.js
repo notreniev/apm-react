@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/navbar/NavBar';
 import Header from './components/header/Header';
 import { Container, Row, Col } from 'react-bootstrap';
+import Content from './components/content/Content';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Container>
+    <>
+    <div className="wrapper">
+      <div className="content">
+        
+          <Container>
         <Row>
           <Col sm="12">
             <Header />
@@ -20,11 +24,15 @@ function App() {
             <NavBar />
           </Col>
           <Col sm="12">
-            content area
+            <Content />
           </Col>
         </Row>
-      </Container>
-    </div>
+          </Container>
+        </div>
+
+        <Footer />
+      </div>
+    </>
   );
 }
 
