@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/navbar/NavBar';
-import Header from './components/header/Header';
-import { Container, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import './App.css';
 import Content from './components/content/Content';
 import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import NavBar from './components/navbar/NavBar';
 
 function App() {
   return (
@@ -27,10 +27,9 @@ function App() {
             <Content />
           </Col>
         </Row>
+          <Footer />
           </Container>
         </div>
-
-        <Footer />
       </div>
     </>
   );
